@@ -77,10 +77,16 @@ To evaluate the model performance over a dateset, you can use the provided scrip
 
 ```bash
 python ./scripts/metrics.py \
---input_path=[path to ground-truth images] \ 
+--g_path=[path to model outputs] \
+--gt_path=[path to the real images using to calculate fid]
+```
+
+```bash
+python ./scripts/FID.py \
 --output_path=[path to model outputs] \
 --fid_real_path=[path to the real images using to calculate fid]
 ```
+
 
 **The pre-trained weights can be downloaded from [Places2](), [CelebA-HQ](), [Paris Street]().**
 
