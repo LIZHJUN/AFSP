@@ -71,6 +71,8 @@ python test.py \
 --model=[which model to be tested]
 ```
 
+**4.   Evaluate**
+
 To evaluate the model performance over a dateset, you can use the provided script [./scripts/matric.py](scripts/metrics.py). This script can provide the PSNR, SSIM and Fréchet Inception Distance ([FID score](https://github.com/mseitzer/pytorch-fid))  of the results.
 
 ```bash
