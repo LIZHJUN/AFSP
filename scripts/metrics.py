@@ -7,13 +7,13 @@ import argparse
 from PIL import Image
 from skimage.metrics import structural_similarity as ssim
 from skimage.metrics import peak_signal_noise_ratio as psnr
-from scripts.image_folder import make_dataset
-from scripts import util
+from Util.image_folder import make_dataset
+from Util import util
 import torch
 
 parser = argparse.ArgumentParser(description='Image quality evaluations on the dataset')
-parser.add_argument('--gt_path', type=str, default='G:/05Experiment_Result/08GTSDG/Pairstreet/GT/', help='path to original gt data')
-parser.add_argument('--g_path', type=str, default='G:/05Experiment_Result/08GTSDG/Pairstreet/part6/', help='path to the generated data')
+parser.add_argument('--gt_path', type=str, default='', help='path to original gt data')
+parser.add_argument('--g_path', type=str, default='', help='path to the generated data')
 parser.add_argument('--save_path', type=str, default=None, help='path to save the best results')
 parser.add_argument('--center', action='store_true', help='only calculate the center masked regions for the image quality')
 parser.add_argument('--num_test', type=int, default=0, help='how many examples to load for testing')
