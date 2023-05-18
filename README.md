@@ -71,20 +71,28 @@ python test.py \
 --model=[which model to be tested]
 ```
 
-To evaluate the model performance over a dateset, you can use the provided script [./scripts/matric.py](scripts/metrics.py). This script can provide the PSNR, SSIM and Fréchet Inception Distance ([FID score](https://github.com/mseitzer/pytorch-fid))  of the results.
+**4.   Evaluate**
+
+To evaluate the model performance over a dateset, you can use the provided script [./scripts/metrics.py](scripts/metrics.py). This script can provide the L1 loss, PSNR, SSIM and LPIPS of the results. Besides, you can use the provided script [./scripts/FID.py](scripts/FID.py). This FID can provide the Fréchet Inception Distance ([FID score](https://github.com/mseitzer/pytorch-fid)) of the results.
 
 ```bash
 python ./scripts/metrics.py \
---input_path=[path to ground-truth images] \ 
+--g_path=[path to model outputs] \
+--gt_path=[path to the real images using to calculate fid]
+```
+
+```bash
+python ./scripts/FID.py \
 --output_path=[path to model outputs] \
 --fid_real_path=[path to the real images using to calculate fid]
 ```
 
-**The pre-trained weights can be downloaded from [Places2](), [Celeba](), [Paris Street]().**
+
+**The pre-trained weights can be downloaded from [Places2](), [CelebA-HQ](), [Paris Street]().**
 
 Download the checkpoints and save them to './path_of_your_experiments/name_of_your_experiment/checkpoints'
 
-For example you can download the checkpoints of Places2 and save them to './results/places/checkpoints' and run the following code:
+For example you can download the checkpoints of Places2 and save them to './results/places2/checkpoints' and run the following code:
 
 ```bash
 python test.py \
