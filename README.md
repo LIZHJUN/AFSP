@@ -4,10 +4,11 @@ Code for our paper "[ Image Inpainting]
 ### Introduction
 
 
+##### Examples
 ![image](https://github.com/LIZHJUN/AFSP/blob/main/Images/example.png)
 Example inpainting results on images of face, natural scene and street view. Missing regions are shown in white. (From left to right) Input corrupted images, EC inpainting result, GTSDG inpainting result, ours results, and ground truth image, respectively.
 
-#### Demo
+##### Demo
 ![image](https://github.com/LIZHJUN/AFSP/blob/main/Demo/CelebA-HQ.gif)
 
 ### Requirements
