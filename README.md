@@ -7,6 +7,9 @@ Code for our paper "[ Image Inpainting]
 ![image](https://github.com/LIZHJUN/AFSP/blob/main/Images/example.png)
 Example inpainting results on images of face, natural scene and street view. Missing regions are shown in white. (From left to right) Input corrupted images, EC inpainting result, GTSDG inpainting result, ours results, and ground truth image, respectively.
 
+#### Demo
+![image](https://github.com/LIZHJUN/AFSP/blob/main/Demo/Demo-CelebAHQ.gif)
+
 ### Requirements
 
 1. Pytorch >= 1.0
